@@ -1,6 +1,6 @@
 :root{
     --font : Impacted ;
-    --fontM : Modern Sans;
+    --fontM : New Athletic M54;
     --border : 2px solid #fff;
 }
 
@@ -20,7 +20,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;   
     background-size: cover;
-    height: 7560px;
+    height: 8100px;
     overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -38,22 +38,24 @@ body{
     position: fixed;
     z-index: 5; 
     margin-bottom: 500px;
+    height: 15vh;
 }
 
+
 .menu  img {
-    margin: 40px 0 0 115px;
-    width: 105px;
-    height: 69px;
+    margin: 10px 0 0 30px;
+    width: 10%;
+    height: 90%;
     overflow: hidden;
     z-index: 5;
 }
 
-.menu nav ul  .img   :hover{
-    height: 20%;
-    width: 20%;
-    border-radius: 10px;
+.menu nav ul  .img  a  :hover{
+    /* height: 20%; */
+    /* width: 20%; */
+    /* border-radius: 10px; */
     border: 5px solid #fff;
-    animation: colorborder 1s linear infinite;
+    /* animation: colorborder 1s linear infinite; */
 }
 
 .menu nav{
@@ -108,13 +110,17 @@ input[type = "checkbox"]{
 
 }
 
-.menu nav ul  .img  img {
+
+
+
+
+.menu nav ul  .img  a img {
     /* border-radius: 50px;
     border: 5px solid #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
+    width: 50%;
     height: 15%;
     padding: 0px; 
     margin:  0 20px 2px 0 ;
@@ -127,7 +133,7 @@ input[type = "checkbox"]{
     font-size: 1.5em;
     background: rgb(0, 0, 0);
     transition: 0.5s;
-    animation: borderbotton 1.5s linear infinite alternate;
+    /* animation: borderbotton 1.5s linear infinite alternate; */
 }
 
 .nav-tgl{
@@ -196,8 +202,9 @@ input[type = "checkbox"]{
 }
 
 .mouseScroll{
+    z-index: 5;
     position: absolute;
-    top: 712px;
+    top: 900px;
     left: 50vh;
     width: 10vh;
     height: 10vh;
@@ -207,10 +214,10 @@ input[type = "checkbox"]{
 
 @keyframes mouseScroll{
     0%{
-        top: 725px;
+        top: 825px;
     }
     100%{
-        top: 712px;
+        top: 812px;
     }
 }
 
@@ -386,8 +393,15 @@ input[type = "checkbox"]{
 article {
     display: flex;
 }
+.boxcontent-two .chart{
+    position: absolute;
+    left: 120vh;
+    
+}
 
-
+.boxcontent-two .chart img{
+    width: 140%;
+}
 .content-two .boxcontent-two .container{
     flex: 3;
     flex-wrap: wrap;
@@ -455,6 +469,14 @@ article {
     flex: 1 ;
 }
 
+.content-three .boxcontent-three .chart{
+    position: absolute;
+    left: 10vh;
+}
+
+.content-three .boxcontent-three .chart img{
+    width: 150%;
+}
 
 .content-three .boxcontent-three .container{
     flex: 3;
@@ -529,6 +551,15 @@ article {
     flex-direction: row;
     flex: 1 ;
 }
+.content-four .boxcontent-four .chart{
+    position: absolute;
+    top: 80vh;
+    left: 40vh;
+}
+
+.content-four .boxcontent-four .chart img{
+    width: 100%;
+}
 
 .content-four .boxcontent-four .container{
     flex: 3;
@@ -544,24 +575,26 @@ article {
     font-family: var(--font);
     margin: 0 0 0 15vmax;
     /* z-index: -1; */
-    font-size: 8vmax;  
-    /* background: linear-gradient(90deg, #313C94, #fff, #313C94);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear infinite ;
-    -webkit-background-clip: text;
+    font-size: 5vmax; 
+    color: #FFF; 
+    /* background: linear-gradient(90deg, #313C94, #fff, #313C94); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 80%; */
+    /* animation: animate 3s linear infinite ; */
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ; */
+    transition: .5s;
 }
-    /* @keyframes animate {
+    
+@keyframes animate {
     0%{
         background-position: -500%;
         font-size: 8vmax;  
     }
     100%{
         background-position: 500%;
-        font-size: 9vmax;  
     }
-    } */
+}
 
 .content-four .boxcontent-four .container p{
     font-family: var(--fontM);
@@ -633,6 +666,16 @@ article {
     flex: 1 
 }
 
+.content-five .boxcontent-five .chart{
+    position: absolute;
+    top: 82vh;
+    left: 90vh;
+}
+
+.content-five .boxcontent-five .chart img{
+    width: 100%;
+}
+
 .content-five .boxcontent-five .container {
     flex: 3;
     flex-wrap: wrap;
@@ -673,7 +716,7 @@ article {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 0 0 0 10vmax;
+    margin: 0 0 0 5vmax;
 }
 
 .content-five .boxcontent-five .content-pic5 img{
@@ -702,6 +745,17 @@ article {
     flex: 3;
 }
 
+
+.content-six .boxcontent-six .chart{
+    position: absolute;
+    top: 30vh;
+    left: 110vh;
+}
+
+.content-six .boxcontent-six .chart img{
+    width: 150%;
+}
+
 .content-six .boxcontent-six .container{
     flex: 3;
     flex-wrap: wrap;
@@ -716,6 +770,7 @@ article {
     margin: 0;
     padding: 0;
     display: flex;
+
 }
 .content-six .boxcontent-six .container ul li{
     font-family: var(--font);
@@ -725,7 +780,6 @@ article {
     Letter-spacing: 10px;
 /*   filter: blur(5px); */
     transition: 4s;
-    
 }
 
 
@@ -774,7 +828,7 @@ article {
 
 section .wave
 {
-    top: 765%;
+    top: 770%;
     position: absolute;
     width: 100%;
     height: 143px;
@@ -795,20 +849,277 @@ section .wave::before{
      animation: wave-re 5s linear infinite;
 }
 
-@keyframes wave {
-    0%{
-        background-position: 0;
-    }
-    100%{
-        background-position: 1360px;
-    }
+
+
+/* ----------------------------- ABOUT --------------------------- */
+
+.content-about{
+    margin: 10vh 0 0 0;
+    position: block;
+    /* background: url('src/picture/BG1.png'); */
+    height: 100%;
+    display: block;
 }
 
-@keyframes wave-re {
-    0%{
-        background-position: 1360px;
-    }
-    100%{
-        background-position: 0px;
-    }
+.content-about .boxcontent-about{ 
+    height: 120vh;   
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.content-about .boxcontent-about .container{
+    /* border: var(--border); */
+    display: flex;
+    flex: 2;
+    height: 100vh;
+    width: 100%;
+    margin: 0 0vh 0 0vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about .boxcontent-about .container h1{
+    display: flex;
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 8vmax;
+    color: #fff;
+}
+
+.content-about .boxcontent-about .member{
+    /* border: var(--border); */
+    flex: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-about .boxcontent-about .member .member1, 
+.member2, .member3, .member4 {
+    /* border: var(--border); */
+    margin: 20px 0;
+     height: 25%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.247);
+
+}
+
+.content-about .boxcontent-about .member .member1 .pic,
+.content-about .boxcontent-about .member .member3 .pic{
+    flex: 1;
+    flex: 1;
+    /* border: var(--border); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: var(--border); */
+}
+
+.content-about .boxcontent-about .member .member1 .detail,
+.content-about .boxcontent-about .member .member3 .detail{
+    flex: 3;
+    /* border: var(--border); */
+
+
+}
+ 
+.content-about .boxcontent-about .member .member2 .pic,
+.content-about .boxcontent-about .member .member4 .pic{
+    flex: 1;
+    
+    
+    /* border: var(--border); */
+}
+
+.content-about .boxcontent-about .member .member2 .detail,
+.content-about .boxcontent-about .member .member4 .detail{
+    flex: 3;
+    /* border: var(--border); */
+}
+
+
+/* member1, member3 */
+.content-about .boxcontent-about .member .member1 .pic img,
+.content-about .boxcontent-about .member .member3 .pic img{
+    width: 110%;
+    flex: 1;
+    /* border: var(--border); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-about .boxcontent-about .member .member1 .detail,
+.content-about .boxcontent-about .member .member3 .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
+
+.content-about .boxcontent-about .member .member1 .detail p,
+.content-about .boxcontent-about .member .member3 .detail p{
+    font-family: var(--fontM);
+    margin: 0 0 0 5vh;
+    opacity: 1;
+}
+
+
+/* member2, member4 */
+.content-about .boxcontent-about .member .member2 .pic img,
+.content-about .boxcontent-about .member .member4 .pic img{
+    width: 100%;
+    margin: 0 5vh 0 0 ;
+    flex: 1;
+    /* border: var(--border); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-about .boxcontent-about .member .member2 .detail,
+.content-about .boxcontent-about .member .member4 .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(252, 252, 252);
+    font-size: 2em;
+}
+
+.content-about .boxcontent-about .member .member2 .detail p,
+.content-about .boxcontent-about .member .member4 .detail p{
+    font-family: var(--fontM);
+    margin: 0 5vh 0 0;
+}
+/* --------------------------------- WAVE ---------------------------- */
+
+
+footer .logo-footer{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    background: #000;
+    justify-content: flex-end;
+    
+}
+
+footer .logo-footer p {
+    left: 74%;
+    width: 100%;
+    position: absolute;
+    color: #f5f5f5;
+    top: 80%;
+    margin: 0 5px 0 0;
+}
+
+footer .logo-footer .pic1{
+    margin: 5vh 0 0 0;
+    /* border: var(--border); */
+    display: flex;
+    justify-content: flex-end;  
+}
+
+
+footer .logo-footer .pic1 img{
+    width: 70%;
+    height: 70%;
+    margin: 0 10px 0 10px;
+}
+
+
+
+/* ---------------------------- */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: 0.3s; */
+  width: 5px;
+  height: 5px;
+  background: #000;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 110; /* Sit on top */
+  padding-top: 1px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 0%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 2000px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*End style*/
+
